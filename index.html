@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeknoKita - Portal Teknologi Informasi</title>
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item img { height: 420px; object-fit: cover; }
+    .carousel-caption { background: rgba(0, 0, 0, .55); border-radius: .5rem; padding: 1rem 1.5rem; }
+    @media (max-width: 576px) { .carousel-item img { height: 260px; } }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">TeknoKita</a>
+      <div class="navbar-nav ms-auto flex-row gap-3">
+        <a class="nav-link" href="#beranda">Beranda</a>
+        <a class="nav-link" href="#layanan">Layanan</a>
+        <a class="nav-link" href="#kontak">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== CAROUSEL (pengganti <main class="hero-section"> lama) ===== -->
+  <div class="container py-4 mb-5" id="beranda">
+    <div id="bannerTI" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+      <!-- Indikator titik -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerTI" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#bannerTI" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#bannerTI" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner rounded shadow">
+
+        <!-- Slide 1: Pemrograman -->
+        <div class="carousel-item active">
+          <img class="d-block w-100" alt="Banner pemrograman"
+               src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 420'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f2027'/%3E%3Cstop offset='1' stop-color='%232c5364'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='420' fill='url(%23g)'/%3E%3Ctext x='140' y='200' font-family='monospace' font-size='150' fill='%2338bdf8' opacity='.35'%3E%26lt;/%26gt;%3C/text%3E%3Ctext x='700' y='280' font-family='monospace' font-size='110' fill='%2338bdf8' opacity='.25'%3E%7B ; %7D%3C/text%3E%3C/svg%3E">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Pemrograman &amp; Pengembangan Web</h5>
+            <p>Belajar membangun aplikasi modern dari dasar hingga mahir.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2: Jaringan -->
+        <div class="carousel-item">
+          <img class="d-block w-100" alt="Banner jaringan komputer"
+               src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 420'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231e3a8a'/%3E%3Cstop offset='1' stop-color='%230e7490'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='420' fill='url(%23g)'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.5' stroke-width='3'%3E%3Cline x1='300' y1='210' x2='600' y2='110'/%3E%3Cline x1='300' y1='210' x2='600' y2='310'/%3E%3Cline x1='600' y1='110' x2='900' y2='210'/%3E%3Cline x1='600' y1='310' x2='900' y2='210'/%3E%3Cline x1='600' y1='110' x2='600' y2='310'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='300' cy='210' r='28'/%3E%3Ccircle cx='600' cy='110' r='28'/%3E%3Ccircle cx='600' cy='310' r='28'/%3E%3Ccircle cx='900' cy='210' r='28'/%3E%3C/g%3E%3C/svg%3E">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Jaringan Komputer</h5>
+            <p>Menghubungkan perangkat dengan infrastruktur yang andal dan cepat.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3: Keamanan -->
+        <div class="carousel-item">
+          <img class="d-block w-100" alt="Banner keamanan siber"
+               src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 420'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23052e16'/%3E%3Cstop offset='1' stop-color='%23134e4a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='420' fill='url(%23g)'/%3E%3Cpath d='M600 70 L760 130 V230 C760 310 690 350 600 380 C510 350 440 310 440 230 V130 Z' fill='none' stroke='%234ade80' stroke-width='8'/%3E%3Crect x='565' y='205' width='70' height='55' rx='8' fill='%234ade80'/%3E%3Cpath d='M580 205 V185 a20 20 0 0 1 40 0 V205' fill='none' stroke='%234ade80' stroke-width='8'/%3E%3C/svg%3E">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Keamanan Siber</h5>
+            <p>Lindungi data dan sistem dari ancaman digital.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol panah kiri-kanan -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#bannerTI" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sebelumnya</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bannerTI" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Berikutnya</span>
+      </button>
+    </div>
+  </div>
+  <!-- ===== AKHIR CAROUSEL ===== -->
+
+  <!-- Konten contoh -->
+  <section class="container mb-5" id="layanan">
+    <h2 class="mb-4">Layanan Kami</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><h5>Pembuatan Website</h5><p>Situs responsif untuk bisnis dan portofolio.</p></div>
+      <div class="col-md-4"><h5>Instalasi Jaringan</h5><p>Perancangan dan pemasangan jaringan kantor.</p></div>
+      <div class="col-md-4"><h5>Audit Keamanan</h5><p>Pemeriksaan celah keamanan sistem Anda.</p></div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white-50 py-4" id="kontak">
+    <div class="container text-center">&copy; 2026 TeknoKita. Hubungi: info@teknokita.id</div>
+  </footer>
+
+  <!-- Bootstrap 5 JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
